@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+            * {
+                margin: 0px; /* 저별표시 모든태그한테 영향주겠다는뜻 이거지금 공부하는중이라쓰는거지 원래이거쓰지말라햇음~~ */
+                padding: 0px;
+            }
+
+            .box-red{
+                width:300px;
+                background-color: #ff0000;
+                /*margin: 10px;*/
+
+                /*  
+                margin-top: 10px; 
+                margin-right: 20px;
+                margin-bottom: 30px;
+                margin-left: 40px;
+                */
+
+                /*margin: 10px 20px 30px 40px; 위 오른쪽 아래 왼쪽 시계방향순서로적용*/
+
+                margin: 20px 50px; /*상하  좌우 둘이 같을때 이렇게씀 */
+            }
+
+            .box-blue{
+                width:300px;
+                background-color: #0000ff;
+                margin-top: 30px; /*겹친거임 안늘어났음 위에애가 40잡고 나는30잡았으면 70벌어져야했는데
+                둘중에 많은애만 적용이되었음 위에 애가 밑으로10주고 밑에애가 위로50줬어
+                 그럼 큰애껄로적용된다는 50만큼만 벌어짐 근데 좌우는 또 이거 겹치는거 안그러고
+                 상하만 이럼 */
+
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="box-red">
+            css에서 가장 보편적이고 많이 사용하는 마진과 패딩에 대한 값이 어떻게 적용되는지 알아봅시다.
+        </div>
+
+        <div class="box-blue">
+            css에서 가장 보편적이고 많이 사용하는 마진과 패딩에 대한 값이 어떻게 적용되는지 알아봅시다.
+        </div>
+
+
+        
+    </body>
+
+</html>
+

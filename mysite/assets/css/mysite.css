@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+           body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, 
+           input, fieldset, legend, p, select, table, th, td, tr,
+           textarea, button, form {
+               margin: 0; padding: 0;            /* 기본적으로 적용된 모든 패딩,마진값 초기화하기위해쓰는거 */
+           } 
+
+           body {
+               font-family: "맑은 고딕", 돋음, 굴림;
+               font-size: 12px;
+           }
+
+           a:link {text-decoration: none; color: #000000;}  /*글씨밑에줄그어져있는거없애기*/
+           a:visited {text-decoration: none; color: #000000;}
+           a:hover {text-decoration: none; color: #000000;}
+           a:active {text-decoration: none; color: #000000;}
+
+           ul,ol {list-style-type: none;} /*이거덕에 리스트옆에점안보임 */
+  
+
+           /*전체 공통*/
+           .clearfix{*zoom:1;}
+           .clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+           .clearfix:after {clear: both;} 
+
+
+            .f-xl {font-size: 20px;}   /*임의로정해준 이름..저거세개에 기본까지 총4가지의폰트사이즈적용되는중*/
+            .f-l {font-size: 16px;}
+            .f-s {font-size: 10px;}
+            .b {font-weight: bold;}
+
+
+
+
+           /*레이아웃*/
+           #wrap {     /*얘껍데기 만약 얘가 1200으로 늘어났대그럼 여기만 1200px로늘려주면 내가아까하나로싸놨으니까 
+                        일일히 바꾸지 않아도 바로 바뀐수치로 적용됨 */
+               width: 1000px;
+               /* background-color: #fbff00;*/
+               margin: 0px auto;   /*가운데 위치시키는 공식 */
+                                              /*가상의박스 div많이쓰임~~ 로그인/회원가입 버튼있을곳을 또 하나의 div로묶어주는..
+                                              묶어놓고 얘는 오른쪽으로붙여줄겨*/
+           }
+           
+
+           #wrap #header {
+               width: 1000px;        /*박스안에 하나로 싸놓으면 나중에 옆에 내용늘어났을때도 바꾸기 수월할것*/
+               /*background-color: #0000ff;*/
+                border-bottom: 1px solid #000000;  /* 헤더 박스의 밑부분에 선준거 */        
+           }
+
+           #wrap #nav {
+              /* background-color: #00ff00; */
+              border-bottom: 1px solid #000000;
+           }
+
+           /* 가로1단배치 */
+           #wrap #contents {
+               /*background-color: #ffffff;*/
+               padding: 40px 20px;
+           }
+
+           /* 가로2단배치 */
+           #wrap #contents2 {
+               padding: 20px 0px;
+           }
+
+           #wrap #footer {
+            background-color: #cccccc;
+            border-bottom: 1px solid #000000;
+        }
+          
+
+ 
+           /*헤더상세*/
+           #header>h1 {
+            float: left;
+            margin: 10px 0px 10px 0px;  /*h1이라는박스랑 헤더라는박스가있다네 */
+        }
+
+
+            #header>h1>a {
+                font-size: 35px;
+                color: #79B30B;
+
+          }
+
+            #header>ul {
+                float: right;
+                margin: 20px 0px 0px 0px;
+                /* display: flex 
+                justify-content: space-between;*/
+
+         }
+
+            #header>ul>li {
+                float:left;
+                margin: 0px 0px 0px 30px;  /*오른쪽에 줬더니 회원가입쪽도같이늘어나서 왼쪽에 줬음 
+                근데만약 가운데에 뭐 내용써있는거있을땐 또다른방법생각해야겠지 지금은 왼쪽에 뭐 컨텐츠가없어서 ㄱㅊ */
+                /*border: 1px solid #000000;*/
+             
+         }
+
+            
+            /*네비 상세*/
+            /* #nav {
+                    margin: 10px 0px 0px 0px;
+                } */
+                
+            #nav>ul {
+                margin: 10px 0px 10px 0px;
+            } 
+
+            #nav>ul>li{
+                float: left; /*다띄워서 초록이가사라지고 빨강이가위로올라오는 아까같은상황->초록이에서 clearfix넣어주면해결될..*/
+                width: 250px;
+                /*border: 1px solid #000000;*/
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+
+           /* 2단배치 상세(contents) */
+           /*컨텐츠 영역 > 서브페이지 레이아웃 blist 컨텐츠에들어가는곳*/
+           #wrap #contents2 #aside {
+               float: left;
+               width: 180px;
+               margin: 0px 10px; 
+           }
+            
+           #wrap #contents2 #main {
+               float: left;
+           }
+
+           /* 가로2단배치(contents) > aside  */
+           /* #wrap #contents2 #aside { */
+               /* width: 180px; */
+               /* background-color: #ff0000; 여기부턴 사실 레이아웃안에 있는영역잉게*/
+               /*margin: 0px 10px; 게시판,일반~첨부게시판을 하나로 싸고있는애. 
+               옆에 여백줄건데 하나하나 주려면 일이잖아 그래서 싸고있는애한테
+                여백줬다 //글고 이거 위에 있는애랑 겹쳐서 여기있는거 위에 합쳐줌 width margin요것들*/
+           /* } */
+
+           #wrap #contents2 #aside h2 {
+               background-color: #dddddd;
+               font-size: 20px;
+               font-weight: bold;
+               text-align: center;
+               padding: 20px 15px;
+           }
+
+           #wrap #contents2 #aside ul>li {
+               border: 1px solid #a6a6a6;
+               font-size: 15px;
+               padding: 5px 5px 5px 5px;
+               margin: 5px 0px 0px 0px;
+           }
+
+           /* 가로2단배치 > main  */
+           #wrap #contents2 #main {
+               width: 798px;
+           }
+
+           #wrap #contents2 #main #main-header {
+               border-bottom: 1px solid #000000;   /*공간보려고 넣어준거*/
+               margin-top: 20px; /*일반게시판 조금아래로내리려고 */
+            }
+
+           #wrap #contents2 #main #main-header h3{
+               font-size: 20px;
+               font-weight: bold;
+               float: left;
+        
+           }
+
+           #wrap #contents2 #main #main-header ul{
+               /* background-color: #79B30B; */
+               float: right;
+           }
+
+           #wrap #contents2 #main #main-header ul>li{
+               float: left;  /*위에꺼까지하고나면 홈게시판일반게시판이 세로로배열되거든그래서 왼쪽부터붙여주는 float left씀 */
+               /* border: 1px solid #000000;  */
+           }
+
+           #wrap #contents2 #main #main-header ul>li:after{
+               content: ">"; margin:3px;
+           }
+
+           #wrap #contents2 #main #main-header ul>li.last:after{
+               content: "";   /*after로 >넣었더니 맨뒤에도붙어버려서 맨뒤엔 넣지말란뜻 */
+           }
+
+
+
+
+            /* 컨텐츠 영역 > 메인페이지 */
+            #contents #profile-img {      /*컨텐츠밑의 프로필 */
+                float: left;
+                width: 300px;
+                margin: 0px 20px 0px 0px;
+            }
+
+            #contents #greeting {   /*컨텐츠 밑의 그리팅 */
+                float: left;
+            }
+
+    
+            #profile-img {
+                width: 300px; /*가로만 줘서 원본비율에맞게 세로도 줄어들도록했음 */
+            }
+        
+
+            /*푸터 영역 */
+            #footer {
+                padding: 20px 10px;
+                text-align: center;
+            }

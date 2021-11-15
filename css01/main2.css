@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+h2 {color: #ff7cc8; font-size: 50px;}
+/* ;까지 쓰고 난 다음에 다른 속성 :속성값 넣어주기~ */
+th {background-color: #bfbfbf;}
+.green {color: #00ff00;}
+.red {background-color: #ff0000; font-size: 30px; color: #ffffff;}
+.f45 {font-size: 45px;}
+#blue {color: #194c99}
+#f50 {color: #ff0000; font-size: 50px;}

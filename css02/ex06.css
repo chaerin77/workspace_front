@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.gray {background-color: rgb(191, 196, 202); border: 1px solid #8f8f8f}
+.lred {background-color: rgb(230, 163, 163); border: 1px solid #be5555} 
+.lblue {background-color: rgb(105, 224, 245); border: 1px solid #3f99bd}
+
+.shape {
+    
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+.p {
+    padding-top:10px;
+}
+
+div.gray.shape.p:hover {
+    background-color: rgb(82, 78, 83);
+    color: #FFFFFF;
+}
+
+div.lred.shape.p:hover {
+    background-color: rgb(189, 86, 86);
+    color: #FFFFFF;
+}
+
+
+div.lblue.shape.p:hover {
+    background-color: rgb(53, 157, 199);
+    color: #FFFFFF;
+}

@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+
+
+#select-boardType {
+    height:25px;
+}
+
+
+#text-title {
+    width: 700px;
+    height: 20px;
+}
+
+#text-password {
+    height: 20px;
+}
+
+.form-text {
+    display: inline-block;
+    width: 80px;
+    /* border: 1px solid #000000; */
+}
+
+input[type="radio"] { /*radio속성쓰는애들한테 이거적용해라는뜻 */
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    width: 10px;
+    height: 10px;
+    margin: 0px 5px 0px 0px;
+}
+
+#text-content {
+    width: 785px;
+    height: 300px;
+}
+
+.btn-area {
+    border-top: 1px solid #000000;
+    padding: 12px 5px;  /*등록,초기화 버튼 자체를 안에 컨텐츠덩어리라고 보면 div박스안에서 위에 공간을주려면padding넣어야되는게 맞음*/
+    margin-top: 20px;  /*박스 윗부분 공간 벌려주기위해서 */
+    text-align: center;
+}  
+
+.btn-gray {
+    width: 55px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #aaaaaa;
+    text-align: center;
+    cursor: pointer;
+    background-color: #efefef;
+}
+
+.btn-gray:hover {
+    background-color: #d9d9d9;
+}
+
+.btn-red {
+    width: 55px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    border: 1px solid #880000;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ff7a7a;
+
+}
+
+.btn-red:hover {
+    background-color: #f52828;
+}
+
+.form-group {
+    /* border: 1px solid #000000; */
+    padding: 5px 0px 5px 0px;
+}
+
+.vc {
+    vertical-align: top;
+    height: 300px;
+    line-height: 300px;
+    /* 팁 본문껍데기에 높이를 주고 라인헤이트 주면 ..그니까 두개를 같이주면 중간에 배치가능함 */
+}

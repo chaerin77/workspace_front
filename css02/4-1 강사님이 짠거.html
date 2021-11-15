@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+            table {
+                width:900px;
+                border-collapse: collapse;
+                border-bottom: 1px solid #000000;
+                /*테이블의 맨 밑에만 선그려준거*/
+            }
+            
+            /*table {
+                width:900px;  *테이블 전체가 900입니다소리 
+                border: 1px solid #000000;
+                border-collapse: collapse;
+                border-left: none;
+            } */
+
+            table>thead>tr{
+                border-top: 2px solid #808080; 
+                border-bottom: 2px solid #808080; 
+                /*헤드의 가로안그리려고 thead의 tr이라 자세히 써주고
+                왼오 아예안그리고 위랑아래만 그려준거*/
+                background-color: azure;
+            }
+
+            /* table>thead>tr>th {
+                /*border: 1px solid #000000;
+                background-color: azure; 
+            } */
+
+
+
+            table>tbody>tr {
+                text-align: center;
+                border-bottom: 1px dotted #000000; 
+                /*tr아래쪽에 도트선 넣기 */
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+
+        <!-- 게시판 리스트 만들기 -->
+
+        <h1>mysite</h1>
+        <h2>게시판</h2>
+        <h3>일반게시판</h3>
+        <h4>리스트</h4>
+
+        <table>
+            <colgroup>
+                <col style="width: 10%;">
+                <col style=" ">  <!--여기비워놓으면 알아서 100%에서의나머지가 될것
+                                   테이블900이니까 비율맞춰서 들어갈것-->
+                <col style="width: 12%;">
+                <col style="width: 14%;">
+                <col style="width: 10%;">
+                <col style="width: 10%;">
+ 
+             </colgroup>
+
+            <!-- <colgroup>
+                <col style="width: 50px;">
+                <col style="width: 450px;">
+                <col style="width: 100px;">
+                <col style="width: 100px;">
+                <col style="width: 120px;">
+                <col style="width: 100px;">
+ 
+             </colgroup> -->
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>글쓴이</th>
+                    <th>조회수</th>
+                    <th>작성일</th>
+                    <th>관리</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>123</td>
+                    <td>게시판 게시글입니다.</td>
+                    <td>정우성</td>
+                    <td>1232</td>
+                    <td>2021-11-03</td>
+                    <td>삭제</td>
+                </tr>
+               
+                <tr>
+                    <td>123</td>
+                    <td>게시판 게시글입니다.</td>
+                    <td>정우성</td>
+                    <td>1232</td>
+                    <td>2021-11-03</td>
+                    <td>삭제</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>게시판 게시글입니다.</td>
+                    <td>정우성</td>
+                    <td>1232</td>
+                    <td>2021-11-03</td>
+                    <td>삭제</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>게시판 게시글입니다.</td>
+                    <td>정우성</td>
+                    <td>1232</td>
+                    <td>2021-11-03</td>
+                    <td>삭제</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>게시판 게시글입니다.</td>
+                    <td>정우성</td>
+                    <td>1232</td>
+                    <td>2021-11-03</td>
+                    <td>삭제</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+
+</html>

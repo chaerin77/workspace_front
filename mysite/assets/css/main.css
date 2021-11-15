@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+
+/* 컨텐츠 영역 > 메인페이지 */
+#contents #profile-img {      /*컨텐츠밑의 프로필 */
+                float: left;
+                width: 300px;
+                margin: 0px 20px 0px 0px;
+}
+
+#contents #greeting {   /*컨텐츠 밑의 그리팅 */
+                float: left;
+}
+
+    
+#profile-img {
+                width: 300px; /*가로만 줘서 원본비율에맞게 세로도 줄어들도록했음 */
+}
+        

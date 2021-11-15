@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리/수업할때번거로워서이거쓰지만 현업에서이방식말고외부스타일쓰기 -->
+        <style>
+           /* div {
+                width: 400px;
+                height: 400px;
+                background-color: red; 
+           } 블럭모델들은 일케 색 넣어보니까 어느정도 공간 차지하는지 보이네*/
+           
+           .box-red {
+               width: 500px;
+               height: 60px;
+               background-color: #FF0000;
+           }
+
+           .box-blue {
+               width: 150px;
+               height: 150px;
+               background-color:#0000FF;
+           }
+            
+           .span-red {
+               display: inline-block; /*이거써줘서 인라인에도가세적용되는것*/
+               width: 500px;
+               height: 60px;
+               background-color: #FF0000; /*공간얼마나 차지하나 실험하는중~머여안늘어나네*/
+           }
+
+           .span-blue {
+               display: inline-block;
+               width: 150px;
+               height: 150px;
+               background-color: #0000FF;
+           }
+
+        </style>
+
+    </head>
+
+    <body>
+        <!-- div 이미 있는, 따로따로있는태그들을 한그룹으로 컨트롤해야할때.
+        span 문단에서 단어하나만..쪼개서 세분화할때 -->
+        <div class="box-red"> <!--위에서 .box-red 라고 클래스 box-red라고해놨으니깐 여기도 얘가 클래스박스레드라말해야지-->
+            CSS에서 div 가로 세로가 어떻게 적용되는지 확인해 보겠습니다.
+            <!-- 안 보이지만 사각형 영역안에 있는것~ -->
+        </div>
+        <div class="box-blue">
+            CSS에서 div 가로 세로가 어떻게 적용되는지 확인해 보겠습니다.
+            <!-- 안 보이지만 사각형 영역안에 있는것~ -->
+        </div>
+
+        <p class="box-blue">
+            CSS에서 p 가로 세로가 어떻게 적용되는지 확인해 보겠습니다.
+        </p> <!--p가 문단이라서 한칸 띄워져서 보인다 의미땜시p쓴겨-->
+
+        <span class="span-red">강아지</span> <!--span,img 인라인성격가짐~-->
+        <img class="box-blue" src="./img/jung.jpg">
+        <span class="span-blue">고양이</span>
+
+        <br>
+        <!--<img class="box-blue" src="./img/jung.jpg">--> <!--실험 얘가만약블럭이라면
+        블럭은 한줄 다 차지하니까 밑으로갈것
+        인라인이라면 옆으로붙을것 ->확인결과 인라인.
+        인라인은 가로세로못준대 실험 안먹나 클래스블루주기
+        줬는데 먹는군 얘는 가로세로줄수있네 얘는 인라인이아니고
+        인라인블록이였음 그래서가능-->
+
+        <p>aaaaaaa얘는블록이라 밑으로떨어짐 난죽어도한줄차지해야겠어</p>
+
+        <input class="span-blue" type="text" name="uid" value="">
+        <!--인풋이 블록이라면밑으로떨어지고 인라인이라면옆으로오겠지
+        블록이아닌건알았는데 이제 인라인인가 인라인블록인가가남음-->
+        <a class="span-blue" href="https://www.naver.com/">네이버</a>
+        <!--얘가 인라인이면 가로세로안먹겠지 인라인블록이면가로세로먹을것-->
+
+
+    </body>
+
+</html>

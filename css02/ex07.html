@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+            /* 원사이즈 1024*680 */
+            .bg-img {
+                width: 2000px;  /* <div의 사이즈. 이미지표시될영역함본거> */
+                height: 1608px;
+                background-color: #ff0000;
+
+                background-image: url("./img/back_img01.jpg") ;  /* 불러오는방법 ~   url("경로")  */
+                background-repeat: no-repeat; /* 반복하지않습니다 */
+                /* background-repeat: repeat-x; 가로축 반복 //y는세로 repeat은반복 */
+                background-size: contain; 
+                /* 배경이미지가 요소안에 다 들어오도록 이미지 확대//축소하는거 하늘사진경우엔 꽉차게채웠지만 
+                원본 비율때문에 세로는 요소 공간 다 못채워졌음*/
+                background-position: center center;  /*(가로 세로;)  어디에위치시킬거냐~*/ 
+                /* 하늘사진오른쪽위에오게하려면 (right top;) */
+                background-attachment: fixed;
+            }
+
+            .bg-img {
+                width: 2000px;  /* <div의 사이즈. 이미지표시될영역함본거> */
+                height: 1608px;
+
+                background: #022250 url("./img/jung.jpg") no-repeat fixed center center;
+                /* 약간 보더쓰는거랑 비슷함 1px solid 색깔 이렇게해줬듯 얘도 속성입력해서 한줄로표현가능한가벼
+                위에것처럼 하나하나써도 상관은없음 */
+             
+               /*우리가만든페이지 이력서에사진넣어야해 백그라운드쓰냐 이미지쓰냐
+               html은 태그 -의미  css는 꾸미기인데 이력서사진은 데이타지 그래서 태그써야대
+               배경에 꽃무늬 안깔려있어도 이력서잖아 꽃무늬는꾸미기
+               꾸미기용과 없으면설명이안되는것 구별해서사용하기 (css/html태그) */
+            }
+
+
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="bg-img"><!--div안보이는사각형,,저클래스이름 작명한거~-->
+            <!--이미지scr써서 불러온담 글씨쓰면 즉 이미지 글씨 일케쓰고 실행하면 이미지옆에 글씨바로붙지
+            근데이거말고 지금하는거 background-image: url("경로")쓰고 글씨써놓으면
+            글씨가 옆에붙는게아니라 사진위에 글씨 써지네~~-->
+        </div>
+        
+
+    </body>
+
+</html>

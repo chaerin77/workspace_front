@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*th {
+    background-color: rgb(207, 207, 207); 
+    border-top: 1px solid #000000;
+    border-right: 1px solid #e0e0e0;}
+
+
+td {border-bottom: 1px dotted #000000;}
+
+.w600 {width:600px;}
+.w200 {width:200px;}
+.w100 {width:100px;}
+.center {text-align: center;}*/
+
+/*밑에가 강사님이 짠거 보고 다시짠거*/
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    border:1px solid #000000;
+}
+
+table>tbody>tr>td {
+    border:1px solid #000000;
+}
+
+.w600 {width:600px;}
+.w200 {width:200px;}
+.w100 {width:100px;}
+
+td {
+    font-family: 궁서;
+}

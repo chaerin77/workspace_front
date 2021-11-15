@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8"> <!--브라우저가 문서를 해석할때 필요한 정보-->
+        <title>html 기본태그</title>
+    </head>
+    
+    <body>  <!--화면에 보이는 부분-->
+
+        <p>목차</p>
+
+        <ol>
+            <li><a href="./ex01.html" >h1~h6태그</a></li>
+            <li><a href="./ex02.html" >p br hr strong em 태 그</a></li>
+            <li><a href="./ex03.html" >ol ul 태그</a></li>
+            <li><a href="./ex04.html" >img a 태그</a></li>
+            <li><a href="./ex05.html" >table tr td 태그</a></li>
+            <li><a href="./ex06.html" >테이블 합치기</a></li>
+            <li><a href="./ex07.html" >thead tbody tfoot</a></li>
+        </ol>
+
+        <hr>
+
+        <h1>html 기본태그</h1>
+        <h2>7. thead tbody tfoot</h2>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>번호</th>   <!--데이터가 아닌 영역이라 td 아닌 th로 써줌~-->
+                    <th>학교수</th>
+                    <th>학급수</th>
+                    <th>학생수</th>
+                    <th>교원수</th>
+                </tr>
+                <!--타이틀이 오는 부분을 헤드라고부름
+                  thead가 품고있음 화면상으로는 변하지않지만
+                  논리적으로 구분해주기 위해서 헤드영역이라고써주는것
+                   -->
+            </thead>
+            
+            <tbody>  <!--얘도 구분을 상세하게 해주기위해
+                         tbody로 감싸주기-->
+                <tr>
+                    <td>1</td>
+                    <td>117</td>
+                    <td>252</td>
+                    <td>5547</td>
+                    <td>474</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>111</td>
+                    <td>1720</td>
+                    <td>37686</td>
+                    <td>2632</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <br>
+
+        <table border="1">
+            
+            <colgroup>  <!--css랑 겹친..부분이라는데 css에서하는거 style넓이지정하는그런거
+                          -->
+                <col style="width: 120px">
+                <col style="width: 60px">   <!--width: %로나타내기도함-->
+                <col style="width: 60px">
+                <col style="width: 80px">
+                <col style="width: 100px">
+            </colgroup>
+
+            <caption>제주특별자치도 학교현황</caption> <!--이것도자주안씀-->
+            <thead> <!--head로감쌌고 구분~교원수 데이터 아니니까
+                       td였던거  th로 바꿔주기-->
+                <tr>
+                    <th>구분</th> <!--여기에 width 어쩌구 주고 하면 안좋은코드
+                                   태그랑 스타일이랑 섞이고그러면 더러워져
+                                   데이터는 최대한 데이터끼리만 묶이도록해야함
+                                   스타일은 나중에 아예 다른 파일로빼버릴거래
+                                   스타일 저거는 절충안임 -->
+                    <th>학교수</th>
+                    <th>학급수</th>
+                    <th>학생수</th>
+                    <th>교원수</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>유치원</th> <!--tbody안에 얘하나만 th로묶었음. 다 통일되면좋은데 애매하게 섞여있어서 그렇다고 thead로묶을순없어서
+                                     성격이 다른 유치원만 th로 묶어줬음-->
+                      <!--td*5하면 노가다안해도주르륵나오네 알고만있기-->
+                    <td>117</td>
+                    <td>252</td>
+                    <td>5547</td>
+                    <td>474</td>
+                </tr>
+                <tr>
+                    <th>초등학교</th> 
+                    <td>111</td>
+                    <td>1720</td>
+                    <td>37686</td>
+                    <td>2632</td>
+                </tr>
+                <tr>
+                    <th>중학교</th> 
+                    <td>44</td>
+                    <td>699</td>
+                    <td>21274</td>
+                    <td>1412</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th>합계</th>
+                    <td>272</td>
+                    <td>2671</td>
+                    <td>64507</td>
+                    <td>4518</td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+    </body>
+</html>

@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/*전체공통*/ 
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, 
+input, fieldset, legend, p, select, table, th, td, tr,
+textarea, button, form {
+    margin: 0; padding: 0; 
+}    
+
+
+li { list-style-type: none;}
+
+.clearfix{*zoom:1;}
+           .clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+           .clearfix:after {clear: both;} 
+/*전체공통*/           
+
+
+
+/*레이아웃*/
+#wrap-2 {
+    width: 800px;
+    margin: 0px auto;
+
+    font-family: "맑은 고딕";
+    font-size: 14px
+}
+
+/* #wrap-2 #main-body {
+    border: 1px solid #000000;
+} */
+
+#wrap-2 #main-body #aside2 {
+    width: 90px;
+    /* border: 1px solid #000000; */ 
+    float: left;}
+
+#wrap-2 #main-body #aside2 ul>li {
+    margin-top: 13px;
+    font-size: 14px;
+}    
+
+#wrap-2 #main-body #main-2  {
+    width:680px;
+     /* border: 1px solid #000000;  */
+    float: left;
+    margin-left: 8px;
+}
+
+.long {
+    width:600px;
+}
+
+#wrap-2 #main-body #main-2 ul>li {
+    margin-top: 12px; 
+    font-size: 14px;
+}  
+
+/* #wrap-2 #main-c2 form>input.long { 
+    width: 500px;
+} */
+
+
+/* #wrap-2 #main-body2 {
+    border: 2px solid #cccccc;
+ } */
+
+.size {
+    width: 700px;
+    height: 250px;
+}
+
+#wrap-2 #main-body2 {
+    margin: 15px 0px 25px 0px;
+
+}
+
+
+.m8 {
+    margin-left: 38px;
+    margin-top: 11px;
+}
+
+
+#wrap-2 #main-body3 {
+    text-align: center;
+    border-top: 1px solid #a6a6a6;
+    padding: 10px 0px 0px 0px;
+}

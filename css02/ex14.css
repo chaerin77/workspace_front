@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+li {
+    list-style-type: none;
+    float:left;
+
+    margin-right:30px;
+    padding-left: 15px;
+    padding-right: 30px;
+   
+    background:url(../css02/img/star.jpg) no-repeat left center;
+    background-size: 15px;
+    /*background-position-y: bottom; 별이미지 약간위에있는데..어쩌지*
+     background: left center;/ left center를 저기 위에다가 하나 더 넣어주면될듯
+     그래서 넣엇음~ 원래 저거까진 생각못했었다*/
+}
+
+.line {
+    border-right: 2px solid #000000;
+}
+
+/*강사님 버전
+
+ol {
+    list-style-type: none;
+}
+
+ol>li {
+    float: left;
+
+    background: #ffffff url(./img/star.jpg) no-repeat scroll left center;
+    background-size: 11px 11px;
+    padding: 0px 30px 0px 10px; 위 오 아 왼
+    border-right: 2px solid #000000;
+    margin: 0px 30px 0px 0px;
+
+    border: 1px solid #000000; 영역얼마나 차지하나 보려고
+}
+
+ol>li.last {
+    border-right: none;
+}
+
+ol밑에 li태그이면서 last클래스인애
+
+html에서 메뉴5에  <li class="last">이거써주야함
+
+*/

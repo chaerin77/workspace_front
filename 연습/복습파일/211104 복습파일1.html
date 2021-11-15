@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>선택자 문법과 종류(1)-color background color font-size</title>
+        <link rel="stylesheet" href="./211104 복습파일1.css">
+        
+    </head>
+
+    <body>
+
+        <strong>css파일을 연결하려면 head 안에 <br>
+            꺽새 link rel="stylesheet" href="경로" 꺽새 를 써줘야한다</strong>
+
+        <ol>
+            
+            <li class="red">폰트의 색을 빨간색으로 하고 싶을때 <br> 
+                이 리스트 태그에 내가 임의로 red라는 클래스를
+                 <strong>꺽새 li class="red" 꺽새</strong> 이렇게 넣어주고 <br>
+                css파일에서 <strong>.red { color: #원하는색; }</strong> 이렇게 넣어준다 <br>
+                저 점표시가 클래스라는뜻임 li에 id로 넣어준 경우 (꺽새li id="red"꺽새) #red {color: #색코드 ;} 이렇게씀</li>
+                <br>
+
+            <li class="Green">배경의 색을 초록색으로 바꾸고 싶을 때   
+                <strong>머시기 { background-color: #색코드 ;}></strong>
+            </li>
+                <br>
+
+            <li class="size">폰트의 크기를 바꾸고 싶을 때<br>
+                css파일에 내가 폰트를 바꾸고 싶은 부분을 정의하거나 (클래스나 아이디나.. 클래스의 경우 꺽새안의 html태그 뒤에 class="머시기" 이렇게 써줘야함)<br>
+                태그명을써주고 {속성:속성값;}으로입력 <br>
+                ex) <ul>
+                        <li> h2 { color: #ff0000;}</li>
+                        <li> .red { font-size: 25px;}</li>
+                   </ul>  
+                </li>
+                <br><br>
+
+            <li>그룹선택자--h1이면서 클래스red인애 --> h1.red { } //////// .headline.selected.red { } (저런클래스다가진걔한테 어떤걸하겠다)
+                   <br>                
+                ul>li, thead>tr>th, h3.red {color: red; } --> 저 세개가 색이 똑같다면 이런식으로도 쓸수있다
+                   <br><br>
+                ex) p.red { background-color: #색상코드 ;} --> p태그이면서 클래스가 red인 녀석에게 배경색을주겠다
+                   <br>
+                    li.red { font-size: ?? px ;} --> li 태그이면서 클래스가 red인 녀석에게 폰트사이즈를 바꾸겠다
+                </li>
+                   <br>
+                <li>속성 선택자 input[type="text"] { }
+                    <br>
+                    a[target] {background-color: #ff0000;} 
+                    <br> 
+                    a태그에 타겟을 속성으로가진애들 배경색 빨강으로바꿔라~~
+                    <br><br>
+                    a[target="_blank"] {background-color:#색코드 ;}
+                    <br>
+                --> a태그이면서 타겟=_blank 을 속성으로 가진애들 배경색 바꿀거다
+                    <br><br>
+                    tbody>tr>td a[href] {background-color: #ff0000;}
+                    <br>
+                    바로밑에 이거 바로밑에 이거에 href갖고있는애들은저걸로바꿔~~
+                </li>
+        </ol>
+                <br>
+        <hr>
+
+                <br>
+        <ol>
+            <li>하위 선택자와(자손) --> p.txt1 { }  (꺽새안씀)
+                <br>ex) body ul { color: 색코드;} --> body밑에 있는 모든 ul들
+                <br><br>
+                자식 선택자(자식) --> .red>.txt1 { }
+                <br>
+                ex) body>ul { color: 색코드;} --> body의 바로 밑에 있는 ul만///
+                body>ul>li body 밑에 ul 밑에있는 li만 저색으로바꿀겨
+                <br><br>
+                thead>tr>th {color: #ff0000;} 직계자손만 가능한거<br>
+                thead th {color: #ff0000;} theada밑의 th
+
+            </li>
+            
+        </ol>
+        <br><br>
+
+    </body>
+
+</html>

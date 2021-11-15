@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    
+   <head>
+      <meta charset="UTF-8">
+      <title>폼 연습</title>
+   </head>
+
+   <body>
+      <form>
+         <input text="">
+         <br>
+         <label for="m-id">아이디</label>
+         <input type="text" id="m-id" name="mid" placeholder="아이디를 입력하세요">
+         <br>
+         <label for="m-pw">비밀번호</label>
+         <input type="password" id="m-pw" name="mpw" placeholder="비밀번호를 입력하세요">
+         <br>
+<!-- 만들어본거 value 빠짐 id저렇게쓰면안됨 이걸토대로 밑에써보기       
+         <label for="book">독서</label>
+         <input type="checkbox" id="book" name="hobby">
+         <br>
+         <label for="music">음악</label>
+         <input type="checkbox" id="music" name="hobby">
+         <br>
+         <label for="trip">여행</label>
+         <input type="checkbox" id="trip" name="hobby">
+         <br> -->
+         <br>
+
+         <label for="chk-dog">개</label>
+         <input type="checkbox" id="chk-dog" name="pet" value="dog"><br>
+         <label for="chk-cat">고양이</label>
+         <input type="checkbox" id="chk-cat" name="pet" value="cat" checked="checked"><br>
+         <label for="chk-bird">새</label>
+         <input type="checkbox" id="chk-bird" name="pet" value="bird"><br>
+         <!--value가 있는 이유가 뭐지? 뭐하려고 있는속성이지 지워도 별다른거없던데
+         211029폼메모장 보니까 체크박스-독서 버튼을 사용자가 눌렀을때 value안에 있는 값이 넘어간대 네이버에 전송.
+         전송되는 값이니깐 써줘야겠네..-->
+         <br><br>
+         <label for="rdo-apple">사과</label>
+         <input type="radio" id="rdo-apple" name="fruit" value="apple">
+         <br>
+         <label for="rdo-grape">포도</label>
+         <input type="radio" id="rdo-grape" name="fruit" value="grape">
+         <br>
+         <label for="rdo-orange">오렌지</label>
+         <input type="radio" id="rdo-orange" name="fruit" value="orange" checked="checked">
+
+
+         <button type="submit">저장</button>
+ 
+      </form>
+
+   </body>
+</html>

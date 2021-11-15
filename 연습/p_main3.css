@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+
+h2 {color: #0000ff; font-size: 50px;}
+/*li {color: #FF00FF;}*/
+th {background-color: #bfbfbf;}
+.green {color: #00ff00;}
+.red {background-color: #FF0000; font-size: 30px; color: #FFFFFF;}
+#blue {color: blue;}
+#f50 {font-size: 50px; color: #FF0000;} /* id가 #임 */
+
+/*15페이지까지의 css */

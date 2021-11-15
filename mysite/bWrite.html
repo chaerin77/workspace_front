@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>게시판</title>
+        <link rel="stylesheet" href="./assets/css/board.css">
+    </head>
+
+    <body>
+        <div id="wrap-2">
+            <div id="main-body" class="clearfix">
+                <div id="aside2">
+                    <ul>
+                        <li>게시판선택</li>
+                        <li>제목</li>
+                        <li>비밀번호</li>
+                        <li>공개범위</li>
+                        <li>허용범위</li>
+                    </ul>
+                </div>
+
+                <div id="main-2">
+                    <ul>
+                        <li>
+                            <select name="board">
+                                <option value="">선택해주세요</option>
+                                <option value="general">일반 게시판</option>
+                                <option value="comment">댓글 게시판</option>
+                                <option value="attach">첨부 게시판</option>
+                            </select>
+                        </li>
+                            
+
+                        <li>
+                            <label for="t-t"></label>
+                            <input class="long" type="text" id="t-t" name="title" value="" placeholder="제목을 입력해주세요">
+                        </li>
+
+                        <li>
+                            <label for="pwd"></label>
+                            <input type="text" id="pwd" name="password" value="" placeholder="패스워드를 입력하세요">
+                        </li>
+                                
+                        <li>
+                            <label for="rdo-self">본인</label>
+                            <input type="radio" id="rdo-self" name="range" value="self">
+
+                            <label for="rdo-login">로그인회원</label>
+                            <input type="radio" id="rdo-login" name="range" value="login">
+
+                            <label for="rdo-friend">친구</label>
+                            <input type="radio" id="rdo-friend" name="range" value="friend">
+
+                            <label for="rdo-all">전체</label>
+                            <input type="radio" id="rdo-all" name="range" value="all" checked="checked">
+                        </li>
+
+                        <li>
+                            <label for="chk-commentp">댓글허용</label>
+                            <input type="checkbox" id="chk-commentp" name="prange" value="commentp" checked="checked">
+
+                            <label for="chk-answer">답글허용</label>
+                            <input type="checkbox" id="chk-answer" name="prange" value="answer">
+
+                            <label for="chk-like">좋아요허용</label>
+                            <input type="checkbox" id="chk-like" name="prange" value="like">
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="main-body2">
+                <!-- <label>첨부파일<input type="file"></label> -->
+                <div class="size">
+                    <textarea class="size"></textarea>
+                </div>
+
+                첨부파일
+                <input class="m8" type="file" value="첨부파일">
+            </div>
+
+            <div id="main-body3">
+                <input type="button" value="등 록">
+                <input type="button" value="초기화">
+            </div>
+
+            
+        </div>    
+   </body> 
+
+
+
+ <!-- <body>
+       <div id="wrap-2">
+           <div id="main-body">
+                <div id="main-c1">
+                    <form>
+                        게시판선택
+                        <select name="board">
+                            <option value="">선택해주세요</option>
+                            <option value="general">일반 게시판</option>
+                            <option value="comment">댓글 게시판</option>
+                            <option value="attach">첨부 게시판</option>
+                        </select>
+                    </form>                     
+                </div>
+
+                <div id="main-c2">
+                    <form>
+                        <label for="t-t">제목</label>
+                        <input class="long"type="text" id="t-t" name="title" value="" placeholder="제목을 입력해주세요">
+                    </form>
+                </div>   
+
+                <div id="main-c3">
+                    <form>
+                        <label for="pwd">비밀번호</label>
+                        <input type="text" id="pwd" name="password" value="" placeholder="패스워드를 입력하세요">
+                    </form>
+                </div>
+                            
+                               
+                <div id="main-c4">    
+                    <form>
+                         공개범위       
+                        <label for="rdo-self">본인</label>
+                        <input type="radio" id="rdo-self" name="range" value="self">
+
+                        <label for="rdo-login">로그인회원</label>
+                        <input type="radio" id="rdo-login" name="range" value="login">
+
+                        <label for="rdo-friend">친구</label>
+                        <input type="radio" id="rdo-friend" name="range" value="friend">
+
+                        <label for="rdo-all">전체</label>
+                        <input type="radio" id="rdo-all" name="range" value="all" checked="checked">
+                    </form>
+                </div>        
+
+                
+                <div id="main-c5">
+                    <form>
+                        허용범위
+                            <label for="chk-commentp">댓글허용</label>
+                            <input type="checkbox" id="chk-commentp" name="prange" value="commentp" checked="checked">
+
+                            <label for="chk-answer">답글허용</label>
+                            <input type="checkbox" id="chk-answer" name="prange" value="answer">
+
+                            <label for="chk-like">좋아요허용</label>
+                            <input type="checkbox" id="chk-like" name="prange" value="like">
+                    </form>                                         
+                </div>        
+                
+           </div>
+
+            
+        </div>     
+
+   </body> -->
+
+
+
+    <!-- <body>
+        <ul>
+            <li><input type="text" name="select" placeholder="제목을 입력해주세요">게시판선택</li>
+
+            <li><label for="t-t">제목</label>
+                <input type="text" id="t-t" name="title" value="" placeholder="제목을 입력해주세요"></li>
+
+            <li><label for="pwd">비밀번호</label>
+                <input type="text" id="pwd" name="password" value="" placeholder="패스워드를 입력하세요"></li>
+                
+            <li>공개범위
+                <label for="rdo-self">본인</label>
+                <input type="radio" id="rdo-self" name="range" value="self">
+
+                <label for="rdo-login">로그인회원</label>
+                <input type="radio" id="rdo-login" name="range" value="login">
+
+                <label for="rdo-friend">친구</label>
+                <input type="radio" id="rdo-friend" name="range" value="friend">
+
+                <label for="rdo-all">전체</label>
+                <input type="radio" id="rdo-all" name="range" value="all">
+               </li>
+
+            <li>허용범위</li>
+        </ul>
+
+         <div>게시판선택
+                <select name="board">
+                    <option value="">선택해주세요</option>
+                    <option value="general">일반 게시판</option>
+                    <option value="comment">댓글 게시판</option>
+                    <option value="attach">첨부 게시판</option>
+                </select>
+            </div>
+
+            <div><label for="t-t">제목</label>
+                <input type="text" id="t-t" name="title" value="" placeholder="제목을 입력해주세요">
+            </div>
+
+            <div><label for="pwd">비밀번호</label>
+                <input type="text" id="pwd" name="password" value="" placeholder="패스워드를 입력하세요">
+            </div>
+                
+            <div>공개범위
+                <label for="rdo-self">본인</label>
+                <input type="radio" id="rdo-self" name="range" value="self">
+
+                <label for="rdo-login">로그인회원</label>
+                <input type="radio" id="rdo-login" name="range" value="login">
+
+                <label for="rdo-friend">친구</label>
+                <input type="radio" id="rdo-friend" name="range" value="friend">
+
+                <label for="rdo-all">전체</label>
+                <input type="radio" id="rdo-all" name="range" value="all" checked="checked">
+            </div>
+
+            <div>허용범위
+                <label for="chk-commentp">댓글허용</label>
+                <input type="checkbox" id="chk-commentp" name="prange" value="commentp" checked="checked">
+
+                <label for="chk-answer">답글허용</label>
+                <input type="checkbox" id="chk-answer" name="prange" value="answer">
+
+                <label for="chk-like">좋아요허용</label>
+                <input type="checkbox" id="chk-like" name="prange" value="like">
+
+            </div>
+        
+
+    </body> -->
+</html>

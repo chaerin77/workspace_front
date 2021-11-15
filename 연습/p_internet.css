@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {font-family: "맑은 고딕"; font-size: 17px;}
+h2 {font-size: 25px;}
+h3 {font-size: 20px;}
+
+h1 {
+    font-family: 궁서; 
+    font-size: 30px; 
+    letter-spacing: 15px;}
+
+.I {font-style: italic;}
+.b {font-weight: bold;}
+.red {color: red;}
+h3 {text-decoration: underline;}
+.hp {text-indent: 30px;}
+.gray {background-color: gray;}
+.line35 {line-height: 35px;}
+ul {list-style-type: square;}
+ol {list-style-type: none;}
+
+tbody>tr:hover {background-color: #EDD3ED;}
+th {background-color: #C8EBFA;}
+.speed {text-align: right;}
+.speed:before {content: "약";}
+.speed:after {content: "(MB/초)";}
+
+tbody a:link {color: #000000; text-decoration: none;}
+tbody a:visited {}
+tbody a:hover {color: #C8EBFA; text-decoration: overline;}
+tbody a:active {color: #0000FF; text-decoration: underline;}
+
+/*연습해본것*/

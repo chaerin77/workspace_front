@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+
+    <body> <!--text/password/hidden/file/radio/checkbox...많이씀-->
+
+            어디로 보낼지  어떤방식으로보낼지
+        <form action="" method="get"> 
+            <!--submit까지 했으면 데이터는 다 정리되었는데 그럼 이제 어디에 보낼지를 알려줘야함 데이터가받아질 공간/ 주소임 그림으로치면 네이버임-->
+            <!--어떤방식으로 받을지 정하는거 method post/get post가 안보이는채로받아지는거 보통패스워드같은거일케받음안보이는게좋으니까-->
+            <label for="u-id">아이디</label>
+            <input type="text" id="u-id" name="uid" value="" placeholder="아이디를 입력하세요"> <br> <!--디자인은 지금 보지말고 의미상 이런영역필요하니깐~구조짜는느낌//이태그의이름은 우리가 지은 u-id-->
+
+            <label for="u-pw">패스워드</label> 
+            <input type="password" id="u-pw" name="upw" placeholder="패스워드를 입력하세요"> <br>
+            <!--uid/upw는 우리가 작명한거임// 아이디에 적은내용이 uid라는곳에 담기게되는것 이름안써주면 받을때 네이버에서 그 정보가 아이디인지 패스워드인지알수없으니까
+            name속성은 내가 담을곳 이름 지정해놓는것같음. 니가 담을 값의 이름(속성name)="uid"(우리가 작명한것 변수같은)-->
+
+            성별 <input type="text" name="gender" value="남자"> <!--value->기본값 미리 넣어놓고싶을때.만약 사용자가 성별에 딴거 입력하면 그걸로 바뀌어서 반영됨~
+            억지로 만든 예시 value 설명하려고-->
+
+            <input type="file" name="file" value=""> <br>
+
+            <label for="chk-book">독서</label> <!--독서에커서올려클릭했을때네모안에커서나오게하는-->
+            <input type="checkbox" id="chk-book" name="hobby" value="book" checked="checked"> <br>
+                                    <!--임의로지은 이름. 이름어떻게지을지도 중요한게 이거 용도알고이해하고있으니이렇게짓는거란거알수있어서.-->                 
+                                                 <!--미리체크되어있게하고싶을때, 만약사용자가 체크되어있던페이지에서 체크풀면 해제됨~속성-->
+            <label>음악</label>
+            <input type="checkbox" id="chk-music" name="hobby" value="music"> <br>
+
+            <label>여행</label>
+            <input type="checkbox" id="chk-trip" name="hobby" value="trip"> <br>
+
+
+            <label for="chk-dog">개</label>
+            <input type="checkbox" id="chk-dog" name="pet" value="dog"><br>
+
+            <label for="chk-cat">고양이</label>
+            <input type="checkbox" id="chk-cat" name="pet" value="cat" checked="checked"><br>
+
+            <label for="chk-bird">새</label>
+            <input type="checkbox" id="chk-bird" name="pet" value="bird"><br>
+
+            <br>
+<!-- 내가 짜본거
+            <label for="rdo-apple">사과</label>
+            <input type="radio" id="rdo-apple" name="fruit" value="apple" checked="checked"><br>
+            
+            <label for="rdo-grape">포도</label>
+            <input type="radio" id="rdo-grape" name="fruit" value="grape"><br>
+
+            <laber for="rdo-orange">오렌지</laber>
+            <input type="radio" id="rdo-orange" name="fruit" value="orange"><br>
+ -->
+
+            
+            <label for="rdo-apple">사과</label>
+            <input type="radio" id="rdo-apple" name="fruit" value="apple"><br>
+
+            <label for="rdo-grape">포도</label>
+            <input type="radio" id="rdo-grape" name="fruit" value="grape" checked="checked"><br>
+
+            <label for="rdo-orange">오렌지</label>
+            <input type="radio" id="rdo-orange" name="fruit" value="orange"><br>
+
+            <!-- 포도선택하면 오렌지는체크가풀리도록하게하려면? 일단 네임이같은게 같은그룹이됨
+            fruit 이라는 곳의 apple/grape/orange id->그룹이름 -->
+            <br>
+            <label for="rdo-1">1월</label>
+            <input type="radio" id="rdo-1" name="month" value="1"><br>
+<!--value에있는값(1)을 저 변수에(name-month)담을거다 ~ 셋을 month라는 그룹으로묶음//보내진건 month-1이럴것-->
+            <label for="rdo-2">2월</label>
+            <input type="radio" id="rdo-2" name="month" value="2"><br>
+        
+                               <!--요기는사용자 사람한테보일부분이라 한글써도 ㄱㅊ--> 
+            <label for="rdo-3">3월</label>
+            <input type="radio" id="rdo-3" name="month" value="3"><br>
+        
+           <br>
+
+
+           <select name="telecom">
+                <option value="">이동통신사를 선택해 주세요</option>
+                <option value="sk">SKT</option>
+                <option value="kt">KTF</option>
+                <option value="lg" selected="selected">LGT</option>
+                <option value="et">ETC</option>
+           </select>
+          <!--통신사를 누르고 4개중에고를거잖아 그럼 이거랑 실제로 기능 같은건 radio-->
+
+           <br>
+           <br>
+
+           <textarea name="content"></textarea>
+              <!--여기는 벨류가없어 벨류처럼 선택안해도 처음부터 그값나타내게하고싶으면
+              여기 위에있는 꺾새들사이에써넣는거임 <textarea name="content">  요기 </textarea>  
+              글고 만약 그내용이 길다면..보통 우리 줄띄어쓰기해서 보기편하게해놓는데
+              얘는 공백까지 인식해버려서 잘 붙여서써놔야함
+              name을 잘 정해놔야함~~ppt에 메모안써있지만 이것도중요해 name잘설정해놓는거-->
+
+
+
+
+            
+            <br>
+            <br>
+            <button type="submit">저장</button> <!--submit->위에 입력한 값들 (머 아이디가 aaa라거나) 전송하게하는~~사용자가입력하는데서만그치지않고 받는것까지하기위해사용
+            그럼 전송을 어디부터어디까지 보내줄거냐~영역을 지정해야함
+            그게 <form>--> 
+            
+            
+            <!-- <button>저장</button> 이거는 덜쓴거임  타입을정해줘야혀 
+            <button type="button">어떤버튼일지모르는버튼의탄생</button> -->
+
+        </form>
+          value="" 이 자리에 기본값으로 넣을거 없어서 비워놓으면 사용자가 입력한 값으로 출력..? 됨
+           
+          아이디라는 글자위에 마우스올려 클릭하면 바로 아이디입력창에 커서뜨게하는기능->아이디글자에 뭔가 해야하니 거기다붙여야함
+          id로 얘가뭔지 설정해주고 걔를 label태그에서 for속성사용후 걔이름을써서 걔를누르면 커서뜨게해주는것
+          라벨은 텍스트 나타내기만하려고 쓰는기능이아니라서 태그용도에 맞게써야함
+
+          id(uid주머니)       =aaa 
+          password(upw주머니) =1234
+          name                value자리
+        <!--<input type="button" value="저장">--> <!--추천하지 않음 value에 글씨밖에못넣음 휴지통이미지같은거못넣어-->
+
+        <!-- <input type="text"><br>
+        <input type="password"><br>
+        <input type="file"><br>
+        <input type="radio"><br>
+        <input type="checkbox"><br>
+        <input type="hidden"><br> -->
+
+        <!-- <input type="month"><br> 
+        <input type="color"><br>
+        <input type="number"><br>
+        모든브라우저에서 지원되지않아서 잘안씀 저거말고도 email number...--> 
+
+
+    </body>
+
+</html>

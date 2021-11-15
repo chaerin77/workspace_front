@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+li {
+    list-style-type: none;
+    float:left;
+    
+    /*margin: 0px 10px;*/
+}
+
+.ine:after {content: ">"; margin: 0px 10px;}
+
+
+
+
+/*
+강사님버전
+
+ol>li{
+    float: left;
+}
+
+ol>li:after{
+    content: ">";
+    padding: 0px 5px;
+}
+
+ol>li.last:after {
+    content: "";
+
+}
+ol밑에 li밑에 있으면서 last클래스인애한테
+after해서 >그리는거 못하게할거야 >안넣을거야
+
+hteml에서 맨밑 리스트있는데에 클래스 last넣어주기 */

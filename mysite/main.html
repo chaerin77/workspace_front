@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+   <head>
+       <meta charset="UTF-8">
+       <title>손채린의 홈페이지 입니다.</title>
+      
+       <link rel="stylesheet" href="./assets/css/mysite.css">
+       <link rel="stylesheet" href="./assets/css/main.css">
+
+
+   </head>
+   <!-- 사이트 우선 레이아웃. 큰골격부터 잡을것.
+   이페이지에서 헤더/네비/컨텐츠/푸터는 하나씩만쓸것같아 
+   아마여러번안쓰일것같으니 id주기 -->
+
+   <body>
+
+    <div id="wrap">  <!--얘 안에다 넣어놔야 얘로 하나로싸놔야 가운데로맞추거나 내용늘어났을때 괜찮을수있어..라고할까나..-->
+
+        <div id="header"class="clearfix">  
+            <!-- id가 header인 얘가 회색. h1이랑ul띄웠더니 회색이가 쪼그라들어서 
+            밑에애들이 왕창 올라와버림 그거해결하려고 회색이에게 clearfix넣어줬음  -->
+            <h1><a href="">MySite</a></h1> <!--이자식이거 a태그넣엇는데 글자색 검정색으로 변햇냐 왜그런가 
+            우리가 h1에다가 컬러줬는데 컬러는상속이안되거든 지금 mysite는 a안에 있기때문에 색 적용안된거 
+            그래서 헤더영역-h1 이었던거 h1>a 이렇게바꿔줬음
+            근데 해결안됨 -> 지금 link에 있는 검정색이 힘이더쎄대
+            근데 아이디가 있으면 우선순위가 높아진대 그래서 아이디넣어줌-->
+            <!-- h1이 파란덩어리 -->
+             
+            <ul class="clearfix">
+                <li><a href="">로그인</a></li>  <!--누르면 로그인/회원가입 되는게아니라 가입되고 로그인되는 페이지로넘어갈테니 a태그써야댐 -->
+                <li><a href="">회원가입</a></li>
+            </ul>
+            <!-- ul이 초록덩어리 -->
+
+        </div>
+
+        <div id="nav">
+            <ul class="clearfix">
+                <li>입사지원서</li>
+                <li>게시판</li>
+                <li>갤러리</li>
+                <li>방명록</li>
+            </ul>
+        </div>
+                     
+
+        <!--contents-->
+        <div id="contents" class="clearfix"> <!--얘가회색 -->
+        <!--사진이랑 문단을 위로띄우면서 바닥에있던애가 암것도안남았다 인식해서
+        쪼그라들고 맨밑에있던 빨강푸터가 올라와버림 그거해결하는게 쪼그라든애한테 clearfix 써주는거-->
+            <img id="profile-img" src="../css02/img/jung.jpg"> <!--얘가 파란덩어리-->
+
+            <!--greeting-->
+            <div id="greeting"> <!--얘가 초록덩어리. p태그는 따라올라온것-->
+                <p class="f-xl b">
+                    안녕하세요<br>
+                    손채린의 MySite에 오신 것을 환영합니다.
+                </p><br>
+
+                <p class="f-l">
+                    이 사이트는 웹 프로그래밍 실습과제 예제 사이트 입니다.<br>
+                    메뉴는 사이트 소개, 방명록, 게시판이 있구요<br>
+                    자바 수업 + 데이터 베이스 + 웹프로그래밍 수업<br>
+                    배운것들을 만들어 놓은 사이트입니다.
+                    <br><br>
+                    [방명록 글 남기기]
+                </p>
+            </div>
+            <!--greeting-->
+
+        </div>
+        <!--contents-->
+
+
+        <div id="footer">
+            Copyright (c) 2021 손채린. All right reserved
+        </div>
+
+    </div>
+
+
+   </body>
+ 
+</html>

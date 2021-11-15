@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>html5</title>
+    </head>
+
+    <body>
+        
+        <p>목차</p>
+
+        <ol>
+            <li><a href="./ex01.html" >h1~h6태그</a></li>
+            <li><a href="./ex02.html" >p br hr strong em 태그</a></li>
+            <li><a href="./ex03.html" >ol ul 태그</a></li>
+            <li><a href="./ex04.html" >img a 태그</a></li>
+            <li><a href="./ex05.html" >table tr td 태그</a></li>
+            <li><a href="./ex06.html" >테이블 합치기</a></li>
+            <li><a href="./ex07.html" >thead tbody tfoot</a></li>
+        </ol>
+  
+
+      <hr>
+        
+
+        <h1>html 기본태그</h1>
+        <h2>4.a img 태그</h2>
+        
+        <!--
+        <img src="C:\javaStudy\workspace_front\html01\img\jung.jpg">
+
+        <img src="/javaStudy/workspace_front/front01/img/jung.jpg">
+
+        <img src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png"> -->
+
+        <img src="./img/jung.jpg">
+
+        <!--유재석이 html01-img-subimg에 있는경우//아래로내려가는거라함 상대경로
+            <img src="./img/subimg/yoo.jpg">
+
+        <img src="./html01/img/subimg/yoo.jpg"> 왜 img파일로들어가야하지?
+        /가 들어간다는뜻이라면 하나라서 한번들어가는거니까 한번 들어가서 유재석파일
+        나오는 자리를 써줘야함 이라는 나의 뇌피셜
+        -->
+        
+        <!--../은 두번 들어간다는뜻인듯 upimg 폴더가 workspacefront폴더에있음-->   
+        <img src="../upimg/yoo.jpg" alt="유재석 사진">
+
+        <br>
+
+        <!--누르면 이동하는걸로 만들것임 html01에 있는 ex01.html로 이동하게 만들거니까 
+            html01까지 들어간 상태에서 주소 긁어서 붙이고 \한번 써준다음 해당문서(1번)써주기-->
+        
+            <a href="C:\javaStudy\workspace_front\html01\ex01.html" target="_blank">1번문서로 이동</a>
+            <br>
+            <a href="./ex02.html" target="_blank">2번문서로 이동</a>
+
+         <!--새창으로열림--> 
+         <!--아 이해함 ./이거 보는게 자기 현재위치에서 본다고 말한게
+           지금 여기에 쓰고있는 이 내 문서있잖아 그게 내 위치였음 (./)
+           긍게 지금 내 위치는 ex04.html 이거임~~ 그래서 현재위치가여기니까
+            ex02.html을 이동경로로 넣고 싶으면 굳이 어딜 거칠필요가없는거임
+            바로같은공간에있응게 근데 만약 img안에있는 무언가를 첨부하려했다면
+            img를쓰고 \ 써서 그 파일명 써야함 -->
+   
+        
+            <a href="C:\javaStudy\workspace_front\html01\ex01.html" target="view">1번문서로 이동</a>
+         <br>
+        <a href="./ex02.html" target="view">2번문서로 이동</a>
+
+        <!--첫번째만 새로열리고 두번째부터는 열렸던곳에 새로열림 이건 ppt없는내용-->
+
+        
+        <br>
+
+        <img src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png">
+
+        <br>   
+      
+        <a href="https://www.daum.net/" target="_blank"> <!--이름은 뭘로지어도상관은없지만 aaa이런건별로안좋다네-->
+            <img src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png">
+        </a>
+                                                <!--다음 버튼을 누르면 다음홈페이지로이동
+                                                <a>다음</a> 구조-->
+
+
+                                                
+    </body>
+
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="./assets/css/mysite.css">
+        <link rel="stylesheet" href="./assets/css/bboard_t.css">
+        <link rel="stylesheet" href="./assets/css/loginW copy.css">
+    </head>
+
+    <body>
+        <div id="wrap">
+            <!-- header -->
+            <div id="header"class="clearfix">
+                <h1><a href="">MySite</a></h1>
+                <ul class="clearfix">
+                    <li><a href="">로그인</a></li>  
+                    <li><a href="">회원가입</a></li>
+                </ul>
+            </div>
+            <!-- header -->
+
+            <!-- nav -->
+            <div id="nav">
+                <ul class="clearfix">
+                    <li>입사지원서</li>
+                    <li>게시판</li>
+                    <li>갤러리</li>
+                    <li>방명록</li>
+                </ul>
+            </div>
+            <!-- nav -->
+
+            <!--contents-->
+            <div id="contents2" class="clearfix">
+                <!--aside-->
+                <div id="aside">
+                    <h2>게시판</h2>
+                    
+                    <ul>
+                        <li>일반 게시판</li>
+                        <li>댓글 게시판</li>
+                        <li>첨부 게시판</li>
+                    </ul>
+                </div>
+                <!--aside-->
+
+
+                <!--main-->
+                <div id="main">
+                    <div id="main-header" class="clearfix">
+                        <h3>일반 게시판</h3>
+
+                        <ul class="clearfix">
+                            <li>홈</li>
+                            <li>게시판</li>
+                            <li class="last">일반게시판</li> <!--after로 >넣었더니 맨뒤에도붙어버려서 이클래스만듦-->
+                        </ul>
+                        
+                    </div>
+
+
+                    <div id="">
+                        <form action="" method="">
+
+
+                            <!--아이디-->
+                            <div class="text-space">
+                               <label for="myid" class="text-left-width">아이디</label>
+                               <input type="text" id="myid" name="" value="" placeholder="아이디를 입력하세요">
+                            </div>
+                            <!--아이디-->
+
+                            
+                            <!--패스워드-->
+                            <div class="text-space" >
+                                <label for="password" class="text-left-width">패스워드</label>
+                                <input type="text" id="password" name="" value="" placeholder="패스워드를 입력하세요">
+                                
+                            </div>
+                            <!--패스워드-->
+
+
+                            <!--이름-->
+                            <div class="text-space">
+                                <label for="myname" class="text-left-width">이름</label>
+                                <input type="text" id="myname" name="" value="" placeholder="이름을 입력하세요">
+                            </div>
+                            <!--이름-->
+
+
+                            <!--프로필사진-->
+                            <div class="text-space">
+                                <span class="text-left-width">프로필사진</span>
+                                <input type="file" value="파일 선택">
+                            </div>
+                            <!--프로필사진-->
+
+
+                            <!--주소-->
+                            <div class="text-space">
+                                <label for="post" class="text-left-width">주소</label>
+                                <input type="text" id="post" name="" value="" placeholder="우편번호">
+                                <!--라벨이랑떨어져있어도 id를같게 해준거라 동작됨~~ 떨어뜨려놓고쓰는경우 흔치않긴함-->
+                                <button>우편번호찾기</button>
+                                
+                                <br>
+                                <input type="text" id="address" name="" value="" placeholder="주소">
+
+                            </div>
+                            <!--주소-->
+
+
+                            <!--이동통신사-->
+                            <div class="text-space">
+                                
+                                <label for="report" class="text-left-width">이동통신사</label>
+                                <select id="report" name="">
+                                    <option value="" selected="selected">선택해주세요</option>
+                                    <option value="">선택해주세요</option>
+                                    <option value="">선택해주세요</option>
+                                </select>
+                            </div>
+                            <!--이동통신사-->
+                           
+
+                            <!--나이-->
+                            <div class="text-space">
+                                <span class="text-left-width">나이</span>
+
+                                <label for="rdo-teen">10대</label>
+                                <input type="radio" id="rdo-teen" name="" value="">
+
+                                <label for="rdo-twenty">20대</label>
+                                <input type="radio" id="rdo-twenty" name="" value="" checked="checked">
+
+                                <label for="rdo-thirty">30대</label>
+                                <input type="radio" id="rdo-thirty" name="" value="">
+
+                                <label for="rdo-forty">40대</label>
+                                <input type="radio" id="rdo-forty" name="" value="">
+
+                                <label for="rdo-anything">기타</label>
+                                <input type="radio" id="rdo-anything" name="" value="">
+                            </div>
+                            <!--나이-->
+
+
+                            <!-- 취미 -->
+                            <div class="text-space">
+                                <span class="text-left-width">취미</span>
+
+                                <label for="chk-book">독서</label>
+                                <input type="checkbox" id="chk-book" name="" value="" checked="checked">
+                                
+                                <label for="chk-music">음악</label>
+                                <input type="checkbox" id="chk-music" name="" value="">
+
+                                <label for="chk-trip">여행</label>
+                                <input type="checkbox" id="chk-trip" name="" value="">
+
+                                <label for="chk-movie">영화</label>
+                                <input type="checkbox" id="chk-movie" name="" value="">
+
+                                <label for="chk-code">코딩</label>
+                                <input type="checkbox" id="chk-code" name="" value="">
+
+                                <label for="chk-any">기타</label>
+                                <input type="checkbox" id="chk-any" name="" value="">
+  
+                            </div>
+                            <!-- 취미 -->
+
+
+                            <!-- 자기소개 -->
+                            <div class="text-space">
+                                <span class="text-left-width" id="self">자기소개</span>
+
+                                <textarea id="text-size"></textarea>
+                            </div>
+                            <!-- 자기소개 -->
+
+
+                            <!-- 버튼 -->
+                            <div class="text-space" id="button">
+                                <button type="submit" class="btn-size">등록</button>
+                                <button type="reset" class="btn-size">초기화</button>
+                            </div>
+                            <!-- 버튼 -->
+
+
+                           
+                        </form>
+                
+
+                    </div>
+
+                </div>  
+                <!--main-->
+
+            </div> 
+            <!--contents껍데기-->
+
+
+            <!-- footer -->
+            <div id="footer">
+                Copyright (c) 2021 손채린. All right reserved
+            </div>
+            <!-- footer -->
+       </div> 
+       <!--wrap-->
+
+    </body>
+
+</html>

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.red {
+    width:200px;
+    height:300px;
+    background-color: darkred;
+    /* 블록은 가로세로주기가 가능하다 div는 블록이다 */
+    background-attachment: fixed; /*백그라운드이미지 안들어가있어서 적용안되는거임*/
+
+}
+.green {
+    width: 700px;
+    height: 25px;
+    background-color: rgb(26, 153, 136);
+}
+
+
+.blue {
+    width: 100px;
+    height: 25px;
+    background-color: rgb(26, 77, 153);
+    
+}
+
+.inline {
+    display: inline-block; /*인라인에게 가로세로넣기해주고싶을때사용*/
+
+    width: 700px;
+    height: 700px;
+    background-color: #aa5acf;
+
+
+    background-image: url("../css02/img/flower.jpg"); /*경로에따옴표잘넣기*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    background-attachment: fixed;
+    /* fixed 이거는 백그라운드 이미지넣고나서 그 이미지한테 적용되는거였음
+    그래서 클래스 blue에다가 클래스red에다가 픽스드 넣어도 별 다를게 없는거였음 */
+
+}
